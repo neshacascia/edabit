@@ -6,3 +6,8 @@ function sumOfCubes(nums) {
     ? nums.map(num => Math.pow(num, 3)).reduce((prev, curr) => prev + curr)
     : 0;
 }
+
+// Refactored solution:
+function sumOfCubes(nums) {
+  return nums.reduce((prev, curr) => prev + Math.pow(curr, 3), 0);
+}

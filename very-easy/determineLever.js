@@ -4,11 +4,11 @@
 // second class lever, or a third class lever.
 
 function determineLever(arr) {
-  const [item1, item2, item3] = arr;
+  const [, second, third] = arr;
 
-  return item1 === 'e' && item2 == 'f' && item3 === 'l'
+  return second == 'f' && third === 'l'
     ? 'first class lever'
-    : item1 === 'e' && item2 == 'l' && item3 === 'f'
+    : second == 'l' && third === 'f'
     ? 'second class lever'
     : 'third class lever';
 }

@@ -5,3 +5,8 @@ function rotateByOne(arr) {
   const lastEl = [arr.pop()];
   return lastEl.concat(arr);
 }
+
+// Refactored solution:
+function rotateByOne(arr) {
+  return [arr.pop(), ...arr];
+}

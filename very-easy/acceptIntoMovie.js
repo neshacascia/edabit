@@ -9,3 +9,8 @@
 function acceptIntoMovie(age, isSupervised) {
   return age >= 15 || isSupervised ? true : false;
 }
+
+// Refactored solution:
+function acceptIntoMovie(age, isSupervised) {
+  return age >= 15 || isSupervised;
+}

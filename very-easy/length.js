@@ -4,3 +4,8 @@
 function length(s) {
   return s.split('').length;
 }
+
+// Refactored solution:
+function length(s) {
+  return s.lastIndexOf('');
+}

@@ -5,3 +5,8 @@
 function integerBoolean(n) {
   return n.split('').map(num => (Number(num) ? true : false));
 }
+
+// Refactored solution:
+function integerBoolean(n) {
+  return [...n].map(num => (Number(num) ? true : false));
+}

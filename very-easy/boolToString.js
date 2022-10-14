@@ -4,3 +4,8 @@
 function boolToString(flag) {
   return flag.toString();
 }
+
+// Refactored solution:
+function boolToString(flag) {
+  return `${flag}`;
+}

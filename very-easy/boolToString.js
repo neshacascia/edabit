@@ -9,3 +9,7 @@ function boolToString(flag) {
 function boolToString(flag) {
   return `${flag}`;
 }
+
+function boolToString(flag) {
+  return String(flag);
+}

@@ -5,3 +5,8 @@
 function inchesToFeet(inches) {
   return inches < 12 ? 0 : inches === 12 ? 1 : inches / 12;
 }
+
+// Refactored solution:
+function inchesToFeet(inches) {
+  return Math.floor(inches / 12);
+}

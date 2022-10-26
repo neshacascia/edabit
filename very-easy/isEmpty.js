@@ -4,3 +4,8 @@
 function isEmpty(s) {
   return s ? false : true;
 }
+
+// Refactored solution:
+function isEmpty(s) {
+  return !s;
+}

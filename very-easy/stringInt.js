@@ -4,3 +4,12 @@
 function stringInt(str) {
   return parseInt(str);
 }
+
+// Refactored solution:
+function stringInt(str) {
+  return Number(str);
+}
+
+function stringInt(str) {
+  return +str;
+}

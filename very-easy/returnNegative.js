@@ -5,3 +5,8 @@
 function returnNegative(n) {
   return n >= 0 ? -n : n;
 }
+
+// Refactored solution:
+function returnNegative(n) {
+  return -Math.abs(n);
+}

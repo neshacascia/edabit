@@ -6,7 +6,7 @@ function hasSameBread(arr1, arr2) {
   return arr1[0] === arr2[0] && arr1[2] === arr2[2] ? true : false;
 }
 
-//refactored solution:
+// Refactored solution:
 function hasSameBread(arr1, arr2) {
   const [a, , b] = arr1;
   const [c, , d] = arr2;

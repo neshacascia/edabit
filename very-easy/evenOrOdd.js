@@ -12,3 +12,10 @@ function evenOrOdd(arr) {
     return sum % 2 === 0 ? 'even' : 'odd';
   }
 }
+
+// Refactored solution:
+function evenOrOdd(arr) {
+  return arr.reduce((prev, current) => prev + current, 0) % 2 === 0
+    ? 'even'
+    : 'odd';
+}

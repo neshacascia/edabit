@@ -4,3 +4,8 @@
 function spaceMeOut(str) {
   return str.split('').join(' ');
 }
+
+// Refactored solution:
+function spaceMeOut(str) {
+  return [...str].join(' ');
+}

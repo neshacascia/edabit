@@ -12,3 +12,9 @@ function findDifference(a, b) {
 
   return Math.abs(volA - volB);
 }
+
+// Refactored solution:
+function findDifference(cube1, cube2) {
+  const [[a, b, c], [d, e, f]] = [cube1, cube2];
+  return Math.abs(a * b * c - d * e * f);
+}

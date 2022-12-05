@@ -4,3 +4,8 @@
 function sumFive(arr) {
   return arr.filter(num => num > 5).reduce((prev, curr) => prev + curr, 0);
 }
+
+// Refactored solution:
+function sumFive(arr) {
+  return arr.reduce((prev, curr) => (curr > 5 ? prev + curr : prev), 0);
+}

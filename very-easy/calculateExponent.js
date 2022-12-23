@@ -4,3 +4,8 @@
 function calculateExponent(num, exp) {
   return num ** exp;
 }
+
+// Refactored solution:
+function calculateExponent(num, exp) {
+  return Math.pow(num, exp);
+}

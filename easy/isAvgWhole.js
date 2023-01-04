@@ -3,7 +3,5 @@
 // depending on whether the average of all elements in the array is a whole number or not.
 
 function isAvgWhole(arr) {
-  return arr.reduce((prev, curr) => prev + curr) % arr.length === 0
-    ? true
-    : false;
+  return arr.reduce((prev, curr) => prev + curr) % arr.length === 0;
 }

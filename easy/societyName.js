@@ -10,3 +10,11 @@ function societyName(friends) {
     .map(friend => friend.toString().slice(0, 1))
     .join('');
 }
+
+// Refactored solution:
+function societyName(friends) {
+  return friends
+    .map(friend => friend[0])
+    .sort()
+    .join('');
+}

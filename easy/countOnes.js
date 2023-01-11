@@ -11,3 +11,8 @@ function countOnes(matrix) {
   }
   return count;
 }
+
+// Refactored solution:
+function countOnes(matrix) {
+  return matrix.flat().filter(num => num === 1).length;
+}

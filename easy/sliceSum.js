@@ -4,3 +4,8 @@
 function sliceSum(arr, n) {
   return n === 0 ? 0 : arr.slice(0, n).reduce((prev, curr) => prev + curr);
 }
+
+// Refactored solution:
+function sliceSum(arr, n) {
+  return arr.slice(0, n).reduce((prev, curr) => prev + curr, 0);
+}

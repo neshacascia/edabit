@@ -4,3 +4,9 @@
 function concat(...args) {
   return [...args].flat();
 }
+
+// Refactored solution:
+
+function concat(...args) {
+  return [].concat(...args);
+}

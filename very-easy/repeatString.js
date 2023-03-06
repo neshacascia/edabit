@@ -11,3 +11,8 @@ function repeatString(txt, n) {
     return txt.repeat(n);
   }
 }
+
+// Refactored solution:
+function repeatString(txt, n) {
+  return typeof txt !== 'string' ? 'Not A String !!' : txt.repeat(n);
+}

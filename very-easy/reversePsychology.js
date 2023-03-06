@@ -6,3 +6,8 @@
 function reversePsychology(s) {
   return s ? `Do not ${s}.` : 'Do not do anything.';
 }
+
+// Refactored solution:
+function reversePsychology(s = 'do anything') {
+  return `Do not ${s}.`;
+}

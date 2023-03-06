@@ -7,3 +7,11 @@ function doubleChar(str) {
   str.split('').forEach(letter => newStr.push(letter.repeat(2)));
   return newStr.join('');
 }
+
+// Refactored solution
+function doubleChar(str) {
+  return str
+    .split('')
+    .map(letter => letter.repeat(2))
+    .join('');
+}

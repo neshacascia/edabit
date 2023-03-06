@@ -12,3 +12,8 @@ function charCount(myChar, str) {
   });
   return count;
 }
+
+// Refactored solution
+function charCount(myChar, str) {
+  str.split('').filter(letter === myChar).length;
+}

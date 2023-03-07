@@ -15,3 +15,8 @@ function hashPlusCount(str) {
   }
   return [hashCount, plusCount];
 }
+
+// Refactored solution:
+function hashPlusCount(str) {
+  return [str.split('+').join('').length, str.split('#').join('').length];
+}

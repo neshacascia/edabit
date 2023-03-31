@@ -14,3 +14,8 @@ function flatten(arr) {
   }
   return arr2;
 }
+
+// Refactored solution:
+function flatten(arr) {
+  return [].concat(...arr);
+}

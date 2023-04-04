@@ -8,3 +8,8 @@ function testJackpot(result) {
 
   return result.every(elem => elem === item);
 }
+
+// Refactored solution:
+function testJackpot(result) {
+  return result.every(elem => elem === elem[0]);
+}

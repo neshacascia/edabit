@@ -13,3 +13,9 @@ function removeDups(arr) {
 
   return newArr;
 }
+
+// Refactored solution:
+function removeDups(arr) {
+  const newArr = new Set(arr);
+  return [...newArr];
+}

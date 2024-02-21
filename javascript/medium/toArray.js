@@ -3,5 +3,12 @@
 // key-value pair in the form of an array.
 
 function toArray(obj) {
-  return Object.entries(obj);
+  return Array.from(obj);
 }
+
+console.log(
+  toArray({
+    first: 'Nesha',
+    last: 'Mervin',
+  })
+);

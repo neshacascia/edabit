@@ -6,3 +6,7 @@
 
 def less_than_or_equal_to_zero(num):
 	return True if num <= 0 else False 
+
+# Refactored solution:
+def less_than_or_equal_to_zero(num):
+	return num <= 0

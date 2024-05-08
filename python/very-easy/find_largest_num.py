@@ -8,3 +8,9 @@ def findLargestNum(nums):
     sorted_list = sorted(nums)
     return sorted_list[-1]
 
+# Using max():
+def findLargestNum(nums):
+    return max(nums)
+
+
+

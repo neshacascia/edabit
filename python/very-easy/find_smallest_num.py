@@ -7,3 +7,7 @@
 def find_smallest_num(lst):
     sorted_list = sorted(lst)
     return sorted_list[0])
+
+# Using min():
+def find_smallest_num(lst):
+    return min(lst)

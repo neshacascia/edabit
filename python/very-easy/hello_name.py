@@ -7,3 +7,8 @@
 
 def hello_name(name):
     return "Hello " + name
+
+
+# Using .format():
+def hello_name(name):
+    return "Hello {name}.".format(name=name)

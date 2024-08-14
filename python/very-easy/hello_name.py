@@ -12,3 +12,8 @@ def hello_name(name):
 # Using .format():
 def hello_name(name):
     return "Hello {name}.".format(name=name)
+
+
+# Using formatted string literal:
+def hello_name(name):
+    return f"Hello {name}"
